@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="" id="audio-source"></audio>
+    <section class="home-section">
+        <div class="carousel">
+            <img src="./images/cover 1.png" class="active" alt="cover1">
+            <img src="./images/cover 2.png" alt="cover1">
+            <img src="./images/cover 3.png" alt="cover1">
+            <img src="./images/cover 4.png" alt="cover1">
+            <img src="./images/cover 5.png" alt="cover1">
+        </div>
+        <h1 class="heading">Recently played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="./images/cover 9.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top International</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 2.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">hollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 10.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">yuvan drugs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 5.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+        </div>
+        <h1 class="heading">Based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="./images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top International</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 12.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">hollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 13.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">bollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 1.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">yuvan drugs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./images/cover 3.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+        </div>
+    </section>
+    <section class="music-player-section ">
+        <img src="/project music/images/back.png" class="back-btn icon hide" alt="">
+        <img src="/project music/images/nav.png" class="nav-btn icon hide" alt="">
+
+        <h1 class="current-song-name">Loosu-Penne</h1>
+        <p class="artist hide">Yuvan shankar raja</p>
+        <img class="cover hide" src="/project music/images/vallavan.jpeg" alt="">
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause "></i>
+                <i class="fas fa-forward active"></i>
+
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+        <img src="/project music/images/back.png" class="back-btn icon" alt="">
+        <h1 class="title">playlists</h1>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="/project music/images/vallavan.jpeg"  alt="">
+                <i class="fas fa-pause"></i>
+            </div> 
+            <p class="name">Loosu-Penne</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="/project music/images/vaali.jpeg"  alt="">
+                <i class="fas fa-pause"></i>
+            </div> 
+            <p class="name">sona-sona</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="/project music/images/vettaiyadu vilayadu.jpeg"  alt="">
+                <i class="fas fa-pause"></i>
+            </div> 
+            <p class="name">manjal-veiyil</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="/project music/images/vinaithandi varuvaya.jpeg"  alt="">
+                <i class="fas fa-pause"></i>
+            </div> 
+            <p class="name">mannipaya</p>
+        </div>
+        
+    </section>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
